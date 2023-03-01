@@ -1,0 +1,260 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: conic-gradient(white 0deg 180deg, #c266ff 180deg 360deg);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p {
+  display: inline-block;
+}
+
+span {
+  color: black;
+  /* font-size: ; */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+header {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0 10px 0;
+}
+
+label a {
+  color: grey;
+  text-decoration: none;
+}
+
+i {
+  text-align: left;
+  position: relative;
+  top: -25px;
+  left: 13px;
+}
+
+/* 
+@keyframes slideLeft {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(-40px);
+  }
+  
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(40px);
+  }
+} */
+
+@keyframes blink-caret {
+ from, to {border-color: transparent}
+ 50% {border-color: orange;} 
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+  
+}
+.leftBracket img {
+  opacity: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+.rightBracket img {
+  opacity: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+
+.animation-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+
+}
+
+.leftBracket {
+  margin-right: 250px;
+  position: absolute;
+}
+
+.rightBracket {
+  margin-left: 250px;
+  position: absolute;
+}
+
+.under-text {
+  position: relative;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  opacity: 100%;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typewriter 2s steps(12),
+  blink-caret .4s step-end infinite alternate;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+  margin-left: 150px;
+  /* margin-left: 60px; */
+  text-align: center;
+  /* border: 2px dotted grey; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.icon {
+  width: 55px;
+  opacity: 100%;
+}
+
+.col1 {
+  width: 30%;
+  height: 100%;
+  background: #c266ff;
+}
+
+.column1 {
+  width: 30%;
+  height: 100%;
+  background-color: #d699ff;
+}
+
+.col2,
+.column2 {
+  width: 70%;
+  height: 100%;
+  background: white;
+}
+
+.column1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.password {
+  margin-left: -20px;
+}
+.credentials {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 80%;
+}
+
+
+.input {
+  height: 30px;
+  width: 85%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: grey;
+  padding: 0 0 0 30px;
+  background: rgba(189, 170, 193, 0.501);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.submit {
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  height: 30px;
+  outline: none;
+  width: 179px;
+  background: rgba(13, 13, 13, 0.791);
+  cursor: pointer;
+  transition: 0.3s;
+  color: rgb(199, 196, 196);
+}
+
+.submit:hover {
+  box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+  color: gray;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.left {
+  display: flex;
+}
+
+
+.flexbox_container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  width: 70%;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-left: 150px;
+  margin-top: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
